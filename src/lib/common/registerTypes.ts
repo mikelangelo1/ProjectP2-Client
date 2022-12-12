@@ -5,20 +5,20 @@ export const typeSubHeader =
   "Share your intent with us for a more customized experience";
 export const userTypes: Option[] = [
   {
-    title: "List Green Projects",
-    description: "Create an account to list your green projects",
+    title: "Plan projects",
+    description: "Create an account to manage your projects",
     value: "list",
     icon: "bulboutlined",
   },
   {
-    title: "Calculate & Offset my Personal Emissions",
-    description: "Create an account to calculate and offset your personal footprint",
+    title: "Project Mangers",
+    description: "Create an account to manage startups and enterprise business",
     value: "offset_personal",
     icon: "pluscircleoutlined",
   },
   {
-    title: "Calculate & Offset my Organization Emissions",
-    description: "Create an account to calculate and offset your organisation footprint",
+    title: "Bug tracking",
+    description: "Create an account to track and monitor bugs",
     value: "offset_company",
     icon: "pluscircleoutlined",
   },

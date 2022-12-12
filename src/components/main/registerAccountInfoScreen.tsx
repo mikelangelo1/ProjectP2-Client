@@ -39,11 +39,11 @@ const RegisterAccountInfoScreen: NextPage<RegisterAccountInfoPropType> = ({
   );
   const [idFiles, setIdFiles] = useState<File[]>([]);
   const onSubmit = (type: string, formData: BankInfo | any) => {
-    if (type === "bank") {
-      setCurrStep(currStep + 1);
-      setBankInfo(formData);
-      return;
-    }
+    // if (type === "bank") {
+    //   setCurrStep(currStep + 1);
+    //   setBankInfo(formData);
+    //   return;
+    // }
     if (type === "info") {
       setCurrStep(currStep + 1);
       setBusinessInfo(formData);
@@ -60,7 +60,6 @@ const RegisterAccountInfoScreen: NextPage<RegisterAccountInfoPropType> = ({
     setBusinessRep(formData);
     if (!bankInfo || !businessInfo || !businessRep) return;
     const payload: Lister = {
-      ...bankInfo,
       ...businessInfo,
       ...businessRep,
       IdentityCard: idFiles[0],
@@ -75,14 +74,14 @@ const RegisterAccountInfoScreen: NextPage<RegisterAccountInfoPropType> = ({
   return (
     <div className="flex flex-col justify-center items-center">
       <Stepper steps={accountInfoSteps()} currStep={currStep} />
-      {currStep === 0 && (
+      {/* {currStep === 0 && (
         <BankInfoScreen
           dependencies={dependencies}
           bankInfo={bankInfo}
           onSubmit={(formData) => onSubmit("bank", formData)}
         />
-      )}
-      {currStep === 1 && (
+      )} */}
+      {currStep === 0 && (
         <BusinessInfoScreen
           dependencies={dependencies}
           businessInfo={businessInfo}

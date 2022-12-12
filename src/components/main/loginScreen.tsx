@@ -133,7 +133,7 @@ const LoginScreen: NextPage<LoginPropType> = ({
             priority={true}
             unoptimized={true}
             loader={imageLoader}
-            src="/assets/icons/logo.svg"
+            src="/assets/icons/new_logo_white.svg"
             alt="Icon"
             width={160}
             height={60}
@@ -210,7 +210,7 @@ const LoginScreen: NextPage<LoginPropType> = ({
         </div>
         {!onAdmin && (
           <p className="gap-2 pb-4 flex justify-center">
-            <span>New to Eko Carbon?</span>
+            <span>New to ProjectPilot?</span>
             <Link href="/register">
               <a className="text-tertiary-high">Create an account</a>
             </Link>

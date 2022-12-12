@@ -63,7 +63,7 @@ const Header: NextPage<any> = ({ toggleSideNav, isSideNavOpen, type }) => {
               priority={true}
               unoptimized={true}
               loader={imageLoader}
-              src="/assets/icons/logo_white.svg"
+              src="/assets/icons/new_logo_white.svg"
               alt="Icon"
               width={160}
               height={60}
@@ -71,14 +71,6 @@ const Header: NextPage<any> = ({ toggleSideNav, isSideNavOpen, type }) => {
           </a>
         </Link>
       </h2>
-      {type === "entry" && (
-        <button
-          className="bg-secondary-low px-3 py-2 rounded text-[10px] sm:text-sm"
-          type="button"
-        >
-          Try Our Carbon Calculator
-        </button>
-      )}
       {type === "offset" && (
         <OffsetMenu
           className="hidden sm:flex sm:text-xs"

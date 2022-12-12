@@ -20,7 +20,7 @@ module.exports = {
             tertiary: { // green
                 low: 'rgba(42, 196, 140, 0.1)',
                 mid: '#2AC48C',
-                high: '#187A56',
+                high: 'rgb(30 58 138)',
             },
             background: "#F8F8F8",
             transparent: "rgba(42, 196, 140, 0.0)",

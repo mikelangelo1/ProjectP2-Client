@@ -93,7 +93,7 @@ export interface UserPayload {
   email: string;
 }
 
-export interface Lister extends BusinessInfo, BusinessRepInfo, BankInfo {
+export interface Lister extends BusinessInfo, BusinessRepInfo {
   IdentityCard: File;
 }
 
